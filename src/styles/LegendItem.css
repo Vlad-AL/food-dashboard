@@ -1,0 +1,32 @@
+.legendItem {
+    width: 50%;
+    color: #1e1348;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: .5px;
+}
+
+.legendItem:nth-child(n+3) {
+    margin-top: 10px;
+}
+
+.legend_title {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.legend_icon {
+    border-radius: 5px;
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+}
+
+.gramm_count {
+    margin: 3px 0 0 23px;
+    color: #a59fbf;
+    font-size: 14px;
+    font-family: SimploLight;
+}

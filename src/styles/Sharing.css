@@ -1,0 +1,36 @@
+.sharing_box {
+    position: relative;
+    padding: 15px;
+    color: #fff;
+    background-color: #fb9200;
+    border-radius: 15px;
+    margin-top: 80px;
+}
+
+.sharing_box button {
+    display: block;
+    margin: auto;
+    background-color: #fff;
+    border: none;
+    padding: 7px 30px;
+    color: #fb9200;
+    font-family: SimploLight;
+    font-size: 17px;
+    border-radius: 15px;
+}
+
+.sharing_text {
+    font-family: SimploLight;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.background_dish_image {
+    width: 100px;
+    height: 140px;
+    left: 25%;
+    top: -75%;
+    background-size: cover;
+    position: absolute;
+    background-image: url(../assets/img/dish/flyingdish.png);
+}

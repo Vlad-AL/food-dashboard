@@ -1,0 +1,33 @@
+.cookingStep {
+    margin-bottom: 20px;
+    letter-spacing: .3px;
+    padding: 13px;
+    color: #1e1348;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.step_description {
+    text-indent: 30px;
+    line-height: 25px;
+    font-family: SimploLight;
+}
+
+.step_counter {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.cookingStep:focus,
+.cookingStep:hover {
+    box-shadow: 0 0 5px 1px #fb9200;
+    background-color: #fb9200;
+    color: #fff;
+}
+
+.cookingStep:active {
+    transform: scale(.97);
+}

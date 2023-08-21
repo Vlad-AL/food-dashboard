@@ -1,0 +1,40 @@
+.ingredient {
+    width: calc(100% / 3 - 10px);
+    padding: 10px 5px;
+    background-color: #fff9f3;
+    border-radius: 20px;
+    color: #1e1348;
+    transition: .3s;
+    box-shadow: 0 0 5px 1px rgb(223, 223, 223);
+    user-select: none;
+    margin: 0 5px
+}
+
+.ingredient:hover {
+    box-shadow: 0 0 5px 1px rgb(223, 223, 223);
+}
+
+.ingredient:nth-child(n+4) {
+    margin-top: 10px;
+}
+
+.ingredient_image {
+    text-align: center;
+    font-size: 25px;
+}
+
+.ingredient_title {
+    text-transform: capitalize;
+    margin-top: 5px;
+    text-align: center;
+    font-family: SimploLight;
+}
+
+.ingredient.active {
+    background-color: #2add33;
+    box-shadow: 0 0 5px 1px #2add33;
+}
+
+.ingredient.additional {
+    transform: scale(.95);
+}
