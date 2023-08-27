@@ -1,0 +1,36 @@
+.filter_chooser {
+    position: relative;
+    width: 48%;
+    height: 50%;
+    background-color: aqua;
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.filter_block_title {
+    color: #1e1348;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.ings_contain {
+    padding-top: 10px;
+    height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.ings_contain .ingredient{
+    box-shadow: 0 0 5px 1px rgb(223, 223, 223);
+}
+
+.ings_contain .ingredient:hover {
+    transform: scale(1.03);
+}
+
+.ings_contain .ingredient:active {
+    transform: scale(.97);
+}

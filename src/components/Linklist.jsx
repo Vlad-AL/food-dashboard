@@ -1,5 +1,4 @@
 import React from "react";
-import { useLocation, useRoutes } from "react-router-dom";
 import Logo from "../components/Logo.jsx";
 import NavlistItem from "../components/NavlistItem.jsx";
 import '../styles/App.css';

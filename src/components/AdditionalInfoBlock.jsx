@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useState } from 'react';
 import NotificationIcon from '../assets/icons/notifictionIcon';
 import '../styles/AdditionalInfoBlock.css'
 import AccountIcon from '../assets/icons/accountIcon'
@@ -8,9 +8,22 @@ import Ingredient from './Ingredient';
 import CookingStep from './CookingStep';
 
 const AdditionalInfoBlock = ({dish}) => {
+
+    const [selectedIngredients, setSelectedIngredients] = useState([]);
+
+    const handleIngredientClick = (ing) => {
+        if(selectedIngredients.includes(ing)){
+            setSelectedIngredients(selectedIngredients.filter(selectedIngredient => selectedIngredient !== ing))
+        }
+        else{
+            setSelectedIngredients([...selectedIngredients, ing]);
+        }
+    }
+
     if(!dish) {
         return null
     }
+    
 
     return (
         <div className='additionalInfoBlock'>
@@ -36,7 +49,17 @@ const AdditionalInfoBlock = ({dish}) => {
             <div className="ings_block info_block">
                 {
                     dish.ings.map(ing => {
-                        return <Ingredient additional={true} infoBlock={true} className="ingredient" key={ing} ing={ing}/> 
+                        return(
+                            <Ingredient 
+                                additional 
+                                infoBlock 
+                                className="ingredient" 
+                                key={ing} 
+                                ing={ing}
+                                isSelected={selectedIngredients.includes(ing)}
+                                onClick={() => handleIngredientClick(ing)} 
+                            /> 
+                        )
                     })
                 }
             </div>

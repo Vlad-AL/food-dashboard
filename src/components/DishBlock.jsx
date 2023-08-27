@@ -1,8 +1,9 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Ingredient from './Ingredient';
 import '../styles/DishBlock.css'
 import PlayButton from '../assets/icons/playButton';
 import TimeIcon from '../assets/icons/timeIcon.jsx'
+import FavoriteDishIcon from '../assets/icons/favoriteDishIcon';
 
 const DishBlock = ({id, dishImage, title, calories, time, ings, onClick}) => {
 
@@ -14,10 +15,20 @@ const DishBlock = ({id, dishImage, title, calories, time, ings, onClick}) => {
             }
     
             if(ings.length > 6) {
-                return <div key={index} className='otherIngredients'>+{ings.length - 6} More</div>
+                return <div key={index} className='otherIngredients'>+{ings.length - 5} More</div>
             }
         }
     }
+
+    const [favorite, setFavorite] = useState(false)
+
+    const onClickFav = () => {
+        setFavorite(!favorite)
+    }
+
+    useEffect(() => {
+        console.log(favorite)
+    }, [favorite])
     
     return (
         <div className='dishBlock' onClick={onClick}>
@@ -27,6 +38,7 @@ const DishBlock = ({id, dishImage, title, calories, time, ings, onClick}) => {
                     <div className="dish_title">{title}</div>
                     <div className="calories">{calories}cal</div>
                 </div>
+                <FavoriteDishIcon className="favoriteDishIcon" fill={favorite ? '#ff0000' : '#fff'} stroke={favorite ? '#ff0000' : '#a59fbf'} onClick={onClickFav}/>
             </div>
             <div className="ings_title">Ingredients</div>
             <div className="ingredients_block">

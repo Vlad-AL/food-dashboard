@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useLocation, useParams } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const NavlistItem = ({link, title, icon: Icon}) => {
     const location = useLocation()

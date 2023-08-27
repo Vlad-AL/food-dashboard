@@ -5,13 +5,8 @@
     border-radius: 20px;
     color: #1e1348;
     transition: .3s;
-    box-shadow: 0 0 5px 1px rgb(223, 223, 223);
     user-select: none;
-    margin: 0 5px
-}
-
-.ingredient:hover {
-    box-shadow: 0 0 5px 1px rgb(223, 223, 223);
+    margin: 0 5px;
 }
 
 .ingredient:nth-child(n+4) {
@@ -31,10 +26,18 @@
 }
 
 .ingredient.active {
-    background-color: #2add33;
-    box-shadow: 0 0 5px 1px #2add33;
+    /* background-color: #2add33;
+    box-shadow: 0 0 5px 1px #2add33; */
+    background-color: #fb9200;
+    box-shadow: 0 0 5px 1px #fb9200;
+    color: #fff;
 }
 
 .ingredient.additional {
-    transform: scale(.95);
+    transform: scale(.97);
+}
+
+.ingredient.contains.active {
+    background-color: #dd2a2a;
+    box-shadow: 0 0 5px 1px #dd2a2a;
 }

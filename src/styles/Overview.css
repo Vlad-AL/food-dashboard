@@ -1,0 +1,206 @@
+.overviewMainBlock {
+    width: 55%;
+    background-color: #faf9fb;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    padding: 20px 0;
+    max-width: 85%;
+    margin: auto;
+}
+
+.recommendation_title {
+    display: flex;
+    justify-content: space-between;
+    color: #1e1348;
+    font-size: 20px;
+}
+
+.recommendation_title button {
+    background-color: #faf9fb;
+    border: none;
+    display: flex;
+}
+
+.button_view_text {
+    color: #fb9200;
+    font-size: 15px;
+    margin-right: 5px;
+    padding-top: 1px;
+}
+
+.dishes_block {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.overviewSearchBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.search_block input::placeholder,
+.filtertext {
+    font-family: SimploLight;
+    color: #a59fbf;
+    font-size: 15px;
+}
+
+.search_block input {
+    width: 100%;
+    font-family: SimploLight;
+    color: #a59fbf;
+    font-size: 15px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+}
+
+.search_block {
+    display: flex;
+    padding: 7px 30px 7px 20px;
+    border-radius: 20px;
+    width: 75%;
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px rgb(223, 223, 223);
+}
+
+.filter_block {
+    align-items: center;
+    display: flex;
+    background-color: #fff;
+    padding: 7px 30px 7px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 5px 1px rgb(223, 223, 223);
+    transition: .3s;
+    letter-spacing: .5px;
+}
+
+.filter_block:hover {
+    box-shadow: 0 0 5px 1px rgb(211, 211, 211);
+    transform: scale(1.03);
+}
+
+.filter_block:hover .filtertext {
+    color: #724fff;
+} 
+
+.filter_block:hover .filter_icon svg path {
+    stroke: #724fff;
+} 
+
+.filter_block:active {
+    transform: scale(.97);
+}
+
+.filtertext {
+    margin-left: 10px;
+}
+
+.sharingPoster {
+    font-size: 20px;
+    width: 100%;
+    position: relative;
+    padding: 20px 25px;
+    color: #fff;
+    background-color: #fb9200;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.sharing_poster_description {
+    margin-top: 10px;
+    width: 70%;
+    font-family: SimploLight;
+    font-size: 16px;
+}
+
+.sharing_poster_image {
+    position: absolute;
+    background-size: cover;
+    width: 190px;
+    height: 150px;
+    bottom: 0;
+    right: 5%;
+    background-image: url(../assets/img/background/recipe_background.png);
+}
+
+
+
+.filter_block {
+    z-index: 102;
+}
+
+.filter_active {
+    padding: 20px;
+    z-index: 101;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: -40px;
+    top: 70px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 1px rgb(223, 223, 223);
+    visibility: hidden;
+}
+
+.filter_active.active {
+    visibility: visible;
+}
+
+.filters_block {
+    display: flex;
+    flex-direction: column;
+}
+
+.calories_filter,
+.reset_button {
+    color: #1e1348;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 12px;
+    margin-top: 10px;
+    font-family: SimploLight;
+    box-shadow: 0 0 5px 1px rgb(211, 211, 211);
+}
+
+.filter_content_title {
+    color: #1e1348;
+}
+
+.calories_filter::placeholder {
+    letter-spacing: .5px;
+    font-size: 14px;
+    font-family: SimploLight;
+}
+
+.reset_button {
+    margin-top: 15px;
+    border: none;
+    background-color: #fff;
+}
+
+.filter_active.active .reset_button {
+    transition: .2s;
+}
+
+.reset_button:hover {
+    transform: scale(1.03);
+}
+
+.reset_button:active {
+    border-color: transparent;
+    transform: scale(.98);
+}

@@ -26,6 +26,7 @@
     box-shadow: 0 0 5px 1px #fb9200;
     background-color: #fb9200;
     color: #fff;
+    transform: scale(1.02);
 }
 
 .cookingStep:active {

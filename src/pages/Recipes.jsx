@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import Linklist from "../components/Linklist.jsx";
-import InfoDiagram from "../components/InfoDiagram.jsx";
 
 
 function Recipes() {
